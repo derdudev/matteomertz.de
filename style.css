@@ -1,0 +1,229 @@
+:root{
+    --fontSize: 16px;
+    --monoFontSize: calc(var(--fontSize)*.9);
+    --iconFontSize: 14px;
+    --unit: calc(var(--fontSize)*0.5);
+    --line-height: calc(var(--fontSize)*1.5);
+    --baseline: var(--unit);
+    /*
+    --body-padding-x: calc(var(--unit)*8);
+    --body-padding-y: calc(var(--unit)*8);
+    --body-max-width: calc(var(--unit)*152);
+    */
+    --body-padding-x: calc(var(--unit)*3);
+    --body-padding-y: calc(var(--unit)*3);
+    --body-max-width: calc(var(--unit)*152);
+}
+
+body {
+    max-width: var(--body-max-width);
+    padding: var(--body-padding-y) var(--body-padding-x);
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #5254D9;
+}
+.inline-link{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    line-height: 1;
+    font-weight: 600;
+
+    transition: all .1s;
+}
+.inline-link:hover{
+    cursor: pointer;
+    color: #5254D9;
+    border-color: #5254D9 var(--blue);
+}
+.inline-link::after{
+    display: inline-block;
+    /*font-family: "Material Icons", sans-serif;*/
+    content: "↗";
+    font-size: var(--iconFontSize);
+    line-height: .8;
+}
+.bright-link{
+    border-bottom: 2px solid #fff;
+}
+.bright-link:hover{
+    color: #fff;
+    border-color: #fff;
+}
+.internal-link::after{
+    content: "→";
+}
+
+pre, code {
+    font-size: var(--monoFontSize);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+.name:hover{
+    cursor: pointer;
+}
+.title-container{
+    line-height: 1.2em;
+    margin-left: .5rem;
+
+}
+.title{
+
+}
+.alias{
+    color: rgba(0,0,0,.5);
+}
+
+.avatar img{
+    height: 40px;
+    width: 40px;
+    background: url("res/img/matteomertz logo new - black.png") #000;
+    background-size: auto;
+    border-radius: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.menu-item-grid{
+    height: 100%;
+}
+.menu-item{
+    white-space: nowrap;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+.menu-item-button{
+    position: relative;
+}
+.menu-item-button:hover{
+    cursor: pointer;
+}
+.menu-item-button::before{
+    height: calc(100% + 4px);
+    content: '';
+    width: calc(100% + 1rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 1px)) scale(0.95);
+    border-radius: 4px;
+    background: #EFEFED;
+    opacity: 0;
+    transition: transform 150ms 0s ease, opacity 150ms 10ms ease;
+    z-index: -1;
+}
+.menu-item-button:hover::before{
+    opacity: 1;
+    transform: translate(-50%, calc(-50% - 1px)) scale(1);
+}
+
+.welcome-container-cell{
+    display: flex;
+}
+.welcome-container{
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.featured-container{
+    display: block;
+    position: relative;
+    height: 400px;
+    background-color: #5254D9;
+
+    padding: 20px;
+}
+
+.featured-container-content{
+    height: 100%;
+
+    color: #fff;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: "Martian Mono", monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-present-container{
+
+}
+.project-present-container:hover{
+
+}
+.project-present-screen{
+    height: 300px;
+    background-color: #EFEFED;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px;
+
+    transition: all .2s ease;
+}
+.project-present-screen:hover{
+    background-color: #5254D9;
+}
+.project-present-screen img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.project-headline{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: var(--fontSize);
+}
+.project-description{
+    margin-bottom: 10px;
+}
+
+.engage-next-container{
+    padding: 30px;
+    background: #5254D9;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px 0px;
+}
+
+footer{
+    border-top: 2px solid #EFEFED;
+    padding: 10px 2px;
+}
+
+@media screen and (max-width: 800px){
+    .pages{
+        display: none;
+    }
+    .project-present-screen{
+        height: 200px;
+    }
+    .featured-container{
+        height: 200px;
+    }
+}
