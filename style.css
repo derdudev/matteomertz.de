@@ -96,6 +96,12 @@ pre, code {
     justify-content: center;
     color: #fff;
 }
+.avatar{
+    transition: transform .2s linear,-webkit-transform .2s linear;
+}
+.avatar:hover{
+    transform: translate3d(-2px,-1px,0) rotate(-2deg);
+}
 
 .menu-item-grid{
     height: 100%;
@@ -147,8 +153,6 @@ pre, code {
     position: relative;
     height: 400px;
     background-color: #5254D9;
-
-    padding: 20px;
 }
 
 .featured-container-content{
@@ -162,6 +166,19 @@ pre, code {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
+
+    background-color: #5254D9;
+}
+
+.featured-derdu-text{
+    position: absolute;
+    z-index: 1;
+}
+.featured-me-picture{
+    width: 100%;
+    mix-blend-mode: luminosity;
 }
 
 .project-present-container{
