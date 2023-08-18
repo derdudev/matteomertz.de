@@ -1,6 +1,5 @@
 .stories-container{
-    padding: 35px;
-    padding-top: 160px;
+    padding: 160px 35px 35px;
 }
 
 .stories-heading{
@@ -13,4 +12,17 @@
 .engage-next-container{
     color: #000;
     background: #EFEFED;
+}
+
+.whitespace-container{
+    display: block;
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 800px){
+    .whitespace-container{
+        display: none;
+    }
 }
