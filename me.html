@@ -2,43 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Me · Matteo Mertz</title>
+    <title>Matteo Mertz</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="raster2.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="doing-style.css">
+    
     <link rel="icon" type="image/png" sizes="32x32" href="/res/meta/matteomertz-favicon-round.svg">
 </head>
 <body>
-    <r-grid columns="4" columns-s="1">
-        <r-cell span="1" spann-s="1">
-            <a class="name" href="index.html">
-                <div class="avatar">
-                    <img src="res/img/matteomertz logo new - black.png" alt="">
-                </div>
-                <span class="title-container">
+<r-grid columns="4" columns-s="1">
+    <r-cell span="1" spann-s="1">
+        <a class="name" href="index.html">
+            <div class="avatar">
+                <img src="res/img/matteomertz logo new - black.png" alt="">
+            </div>
+            <span class="title-container">
                     <span class="title">Matteo Mertz</span>
                     <span class="alias">@derdu</span>
                 </span>
-            </a>
-        </r-cell>
-        <r-cell span-s="row" span="2.." class="pages">
-            <r-grid columns="3" columns-s="1" class="menu-item-grid">
-                <r-cell span="1" class="menu-item">
-                    <a class="menu-item-button" href="me.html">Das bin ich</a>
-                </r-cell>
-                <r-cell span="1" class="menu-item">
-                    <a class="menu-item-button" href="doing.html">Das mache ich</a>
-                </r-cell>
-                <r-cell span="1" class="menu-item">
-                    <a class="menu-item-button" href="tobe.html">Das möchte ich sein</a>
-                </r-cell>
-            </r-grid>
-        </r-cell>
+        </a>
+    </r-cell>
+    <r-cell span-s="row" span="2.." class="pages">
+        <r-grid columns="3" columns-s="1" class="menu-item-grid">
+            <r-cell span="1" class="menu-item">
+                <a class="menu-item-button" href="me.html">Das bin ich</a>
+            </r-cell>
+            <r-cell span="1" class="menu-item">
+                <a class="menu-item-button" href="doing.html">Meine Projekte</a>
+            </r-cell>
+            <r-cell span="1" class="menu-item">
+                <a class="menu-item-button" href="now.html">Hier und Jetzt</a>
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <r-grid columns="2" columns-s="1">
+            <r-cell span="1" span-s="1" class="welcome-container-cell">
+                <div class="welcome-container">
+                    <p>
+                        Hey du. Ich heiße Matteo Mertz, bin <span id="age"></span> Jahre alt und am liebsten einfach nur ein Mensch - genau wie du. Falls du nur meinen Lebenslauf als PDF suchst, dann wirst du schnell
+                        <a href="" class="inline-link internal-link">hier</a> fündig.
+                    </p>
+                    <p>
+                        Ich tue gerne Dinge. Meist zu viele auf einmal. Und dann denke ich auch noch sehr gerne vor mich hin. Meist auch zu viel (Obwohl ich glaube, dass wir hierüber lange diskutieren könnten).
+                    </p>
+                </div>
+            </r-cell>
+            <r-cell span="1" spann-s="1" class="featured-cell">
+                <div class="featured-container">
+                    <div class="featured-container-content">
+                        <span class="featured-derdu-text">Das bin ich</span>
+                        <img src="res/img/me-test-picture.png" alt="" class="featured-me-picture">
+                    </div>
+                </div>
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <p>
+            Neben in der Uni zu sein und für mich neue mathematische Konzepte zu erkunden, bin ich sonst auch ständig aktiv. Ich ...
+        </p>
+    </r-cell>
     
     
-    </r-grid>
+    <r-cell span="1..">
+        <r-grid columns="2" columns-s="1">
+            <r-cell span="1">
+                <r-grid columns="3" columns-s="1" class="stories-container" style="background: #F5CAB8;">
+                    <r-cell span="1" span-s="1" class="stories-heading">
+                        erzähle Geschichten
+                    </r-cell>
+                    <r-cell span="2" span-s="1" class="stories-description">
+                        Oder so... Lorem ipsum dolor sit amet consectetur. Nunc sollicitudin nullam consequat morbi amet enim
+                    </r-cell>
+                </r-grid>
+            </r-cell>
+            <r-cell span="1">
+                <r-grid columns="3" columns-s="1" class="stories-container" style="background: #9BDDBA;">
+                    <r-cell span="1" span-s="1" class="stories-heading">
+                        entwickle Ideen
+                    </r-cell>
+                    <r-cell span="2" span-s="1" class="stories-description">
+                        Oder so... Lorem ipsum dolor sit amet consectetur. Nunc sollicitudin nullam consequat morbi amet enim
+                    </r-cell>
+                </r-grid>
+            </r-cell>
+            <r-cell span="1">
+                <r-grid columns="3" columns-s="1" class="stories-container" style="background: #DBE5F0;">
+                    <r-cell span="1" span-s="1" class="stories-heading">
+                        bestaune Design
+                    </r-cell>
+                    <r-cell span="2" span-s="1" class="stories-description">
+                        Oder so... Lorem ipsum dolor sit amet consectetur. Nunc sollicitudin nullam consequat morbi amet enim
+                    </r-cell>
+                </r-grid>
+            </r-cell>
+            <r-cell span="1">
+                <r-grid columns="3" columns-s="1" class="stories-container" style="background: #CB6B56; color: #fff">
+                    <r-cell span="1" span-s="1" class="stories-heading">
+                        denke vor mich hin
+                    </r-cell>
+                    <r-cell span="2" span-s="1" class="stories-description">
+                        Oder so... Lorem ipsum dolor sit amet consectetur. Nunc sollicitudin nullam consequat morbi amet enim
+                    </r-cell>
+                </r-grid>
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        und mache noch viele viele Dinge mehr.
+    </r-cell>
+    
+    <r-cell span="1.." span-s="1">
+        <div class="engage-next-container">
+            <span>Du möchtest mehr über meine Projekte erfahren? Dann geht es für dich <a href="doing.html" class="inline-link">hier</a> weiter.</span>
+        </div>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <r-grid columns="2" columns-s="1">
+            <r-cell span="1">
+                <h4 id="vorbilder-heading">Meine Vorbilder</h4>
+            </r-cell>
+            <r-cell span="1">
+                <p>
+                    Ich durfte in meinem Leben schon einigen wunderbaren Menschen über den Weg laufen. Dazu gehören unter anderem
+                </p>
+                <ul>
+                    <li>Haraldur Thorleifson</li>
+                    <li>Rasmus Andersson</li>
+                    <li>Ayush Soni</li>
+                    <li>Linus Rogge</li>
+                </ul>
+                Besonders geprägt haben mich zudem meine Eltern Andreas und Alexandra Mertz und durch seine strahlende Positivität mein ehemaliger Nachbar Stefan Schneid.
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <r-grid columns="2" columns-s="1">
+            <r-cell span="1">
+                <h4 id="lebenslauf-heading">Mein Lebenslauf</h4>
+            </r-cell>
+            <r-cell span="1">
+                <p>
+                    Hier gibt es gleich mehrere verschiedene Versionen von meinem Lebenslauf für dich.
+                </p>
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <r-grid columns="2" columns-s="1">
+            <r-cell span="1">
+                <h4 id="dankesagung-heading">Dankesagung</h4>
+            </r-cell>
+            <r-cell span="1">
+                <p>
+                    Ich wäre nun nicht da, wo ich gerade bin, wenn mich nicht unzählige tolle Menschen auf meinem Weg unterstützt und diesem mitgeformt hätten.
+                </p>
+            </r-cell>
+        </r-grid>
+    </r-cell>
+    
+    <r-cell span="1..">
+        <footer>
+            <p>
+                2023 «Matteo Mertz»
+            </p>
+            <p>
+                Mich gibt es auch auf <a class="inline-link" href="https://twitter.com/derdudev" target="_blank" rel="noopener noreferrer" >Twitter</a>, <a class="inline-link" href="https://github.com/derdudev" target="_blank" rel="noopener noreferrer">Github</a>, <a class="inline-link" href="https://www.instagram.com/derdu.dev" target="_blank" rel="noopener noreferrer">Instagram</a> und <a class="inline-link" href="https://www.linkedin.com/in/matteo-mertz-477417270" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </footer>
+    </r-cell>
+</r-grid>
+
+<script>
+    const ageElement = document.getElementById("age");
+    const currentDate = new Date();
+    if(currentDate.getMonth() < 4){
+        ageElement.innerText = currentDate.getFullYear() - 2004 - 1;
+    } else {
+        ageElement.innerText = currentDate.getFullYear() - 2004;
+    }
+</script>
 </body>
 </html>

@@ -75,7 +75,7 @@ pre, code {
 .title-container{
     line-height: 1.2em;
     margin-left: .5rem;
-
+    white-space: initial;
 }
 .title{
 
@@ -151,12 +151,14 @@ pre, code {
 .featured-container{
     display: block;
     position: relative;
-    height: 400px;
+    min-height: 400px;
+    height: 100%;
     background-color: #5254D9;
 }
 
 .featured-container-content{
     height: 100%;
+    min-height: inherit;
 
     color: #fff;
     font-weight: bolder;
@@ -179,6 +181,8 @@ pre, code {
 .featured-me-picture{
     width: 100%;
     mix-blend-mode: luminosity;
+
+    margin: 0 !important;
 }
 
 .project-present-container{
@@ -241,6 +245,14 @@ footer{
         height: 200px;
     }
     .featured-container{
+        min-height: inherit;
         height: 200px;
+    }
+}
+
+@media screen and (min-width: 830px){
+    .featured-container{
+        max-height: 400px;
+        min-height: inherit;
     }
 }

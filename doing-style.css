@@ -21,8 +21,20 @@
     background-color: #fff;
 }
 
+.featured-derdu-text{
+    font-size: 3rem;
+}
+.featured-projects-picture{
+    width: 100%;
+    mix-blend-mode: luminosity;
+    margin: 0 !important;
+}
+
 @media screen and (max-width: 800px){
     .whitespace-container{
         display: none;
+    }
+    .featured-derdu-text{
+        font-size: 2rem;
     }
 }
