@@ -28,6 +28,9 @@ a{
 a:hover{
     color: #5254D9;
 }
+.non-bold{
+    font-weight: 400 !important;
+}
 .inline-link{
     display: inline-flex;
     align-items: center;
@@ -171,7 +174,10 @@ pre, code {
 
     overflow: hidden;
 
-    background-color: #5254D9;
+    background-image: url("res/img/me-test-picture.png");
+    mix-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
 }
 
 .featured-derdu-text{
@@ -204,6 +210,7 @@ pre, code {
     transition: all .2s ease;
 }
 .project-present-screen:hover{
+    cursor:pointer;
     background-color: #5254D9;
 }
 .project-present-screen img{
@@ -232,6 +239,10 @@ pre, code {
     margin: 20px 0px;
 }
 
+.descriptory{
+    margin-bottom: 10px;
+}
+
 footer{
     border-top: 2px solid #EFEFED;
     padding: 10px 2px;
@@ -252,7 +263,7 @@ footer{
 
 @media screen and (min-width: 830px){
     .featured-container{
-        max-height: 400px;
+        height: 400px;
         min-height: inherit;
     }
 }
